@@ -7,9 +7,9 @@ function Nav() {
     { label: 'Contact', id: 'contact' },
   ];
   return (
-    <nav>
+    <nav className="fixed bg-gray-950 flex flex-row justify-between pr-10 pl-10 pt-10 w-full">
       <p>Porfolio</p>
-      <ul>
+      <ul className="flex flex-row gap-5">
         {lienNav.map((contenu, index) => (
           <li key={index}>
             <a href={`#${contenu.id}`}> {contenu.label}</a>

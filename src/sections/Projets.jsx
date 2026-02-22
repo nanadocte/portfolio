@@ -5,7 +5,7 @@ import ProjetCard from '../components/ProjetCard';
 function Projets() {
   const stackList = ['blabla', 'blabla'];
   return (
-    <>
+    <div className="px-76">
       <SectionTitle sectionName="03. Projets" contenu="Mes réalisations." />
       <ul>
         <li>Tous</li>
@@ -25,7 +25,7 @@ function Projets() {
           github={projet.github}
         />
       ))}
-    </>
+    </div>
   );
 }
 

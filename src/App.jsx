@@ -1,6 +1,5 @@
 // Use state coeur ajout
 
-import './App.css';
 import Nav from './sections/Nav';
 import Hero from './sections/Hero';
 import About from './sections/About';
@@ -12,7 +11,7 @@ import Footer from './sections/Footer';
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-950">
       <Nav></Nav>
       <Hero></Hero>
       <About></About>
@@ -21,7 +20,7 @@ function App() {
       <Parcours />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

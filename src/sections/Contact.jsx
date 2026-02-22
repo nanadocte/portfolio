@@ -3,7 +3,7 @@ import Form from '../components/Form';
 
 function Contact() {
   return (
-    <>
+    <div className="px-76">
       <SectionTitle sectionName="05. Contact" contenu="Travaillons ensemble." />
       <Form />
       <ul>
@@ -23,7 +23,7 @@ function Contact() {
           </a>
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 

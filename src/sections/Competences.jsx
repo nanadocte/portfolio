@@ -30,7 +30,7 @@ function Competences() {
     'Adaptabilité',
   ];
   return (
-    <>
+    <div className="px-76">
       <SectionTitle
         sectionName="02. Compétences"
         contenu="Ce que je maîtrise."
@@ -52,7 +52,7 @@ function Competences() {
           <li key={skills}>{skills}</li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
