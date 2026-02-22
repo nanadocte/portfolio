@@ -3,8 +3,8 @@ import Form from '../components/Form';
 
 function Contact() {
   return (
-    <div className="px-76">
-      <SectionTitle sectionName="05. Contact" contenu="Travaillons ensemble." />
+    <div className="px-76 p-32 bg-[#020617]">
+      <SectionTitle sectionName="05. Contact" contenu="Travaillons ensemble" />
       <Form />
       <ul>
         <li>

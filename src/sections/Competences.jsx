@@ -30,10 +30,10 @@ function Competences() {
     'Adaptabilité',
   ];
   return (
-    <div className="px-76">
+    <section className="px-76 p-32">
       <SectionTitle
         sectionName="02. Compétences"
-        contenu="Ce que je maîtrise."
+        contenu="Ce que je maîtrise"
       />
       {stack.map((stack) => (
         <SkillCard
@@ -52,7 +52,7 @@ function Competences() {
           <li key={skills}>{skills}</li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 

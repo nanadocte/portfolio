@@ -5,8 +5,8 @@ import ProjetCard from '../components/ProjetCard';
 function Projets() {
   const stackList = ['blabla', 'blabla'];
   return (
-    <div className="px-76">
-      <SectionTitle sectionName="03. Projets" contenu="Mes réalisations." />
+    <div className="px-76 p-32 bg-[#020617]">
+      <SectionTitle sectionName="03. Projets" contenu="Mes réalisations" />
       <ul>
         <li>Tous</li>
         {stackList.map((stack) => (
