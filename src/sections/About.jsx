@@ -29,10 +29,13 @@ function About() {
           dans un environnement professionnel stimulant.
         </p>
         <div className="w-50 flex flex-col">
-          <p className="text-slate-200 mb-2 font-bold">Stack technique</p>
+          <p className="pb-5 text-slate-200 mb-2 font-bold">Stack technique</p>
           <ul className="flex flex-row gap-5 flex-wrap">
             {stack.map((techno, index) => (
-              <li className="text-xs text-slate-400" key={index}>
+              <li
+                className="bg-slate-800 py-1 px-2 rounded-2xl text-xs text-slate-400"
+                key={index}
+              >
                 <button>{techno}</button>
               </li>
             ))}

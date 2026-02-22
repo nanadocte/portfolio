@@ -4,7 +4,7 @@ function Hero() {
   const [showButton, setShowButton] = useState(false);
   return (
     <section
-      className="px-48 h-screen pt-32 flex justify-center"
+      className=" px-48 h-screen pt-32 flex justify-center"
       onMouseEnter={() => setShowButton(true)}
     >
       <div className="group/bienvenue flex flex-col justify-center items-center gap-12">
