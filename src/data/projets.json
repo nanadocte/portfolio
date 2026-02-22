@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": null,
+    "img": "/kasa.png",
     "titre": "Kasa React",
     "description": "Mon projet développé avec React.",
     "stack": ["React"],
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "img": null,
+    "img": "/kasa.png",
     "titre": "JSP ENCORE",
     "description": "LLETS GO",
     "stack": ["Node", "Express", "MongoDB"],

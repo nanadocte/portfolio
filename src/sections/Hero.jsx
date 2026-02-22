@@ -9,7 +9,7 @@ function Hero() {
     >
       <div className="group/bienvenue flex flex-col justify-center items-center gap-12">
         <p
-          className="font--montserrat z-2 fixed opacity-0 group-hover/bienvenue:opacity-30 transition-opacity duration-500 text-9xl font-bold
+          className="font--montserrat z-2 fixed opacity-0 group-hover/bienvenue:opacity-20 font-semibold transition-opacity duration-1500 text-9xl
           absolute top-[42%] right-[60%] rotate-[270deg] bg-gradient-to-r from-indigo-800 
           to-purple-800 bg-clip-text text-transparent blur-xs pointer-events-none"
         >

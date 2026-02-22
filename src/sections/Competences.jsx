@@ -29,7 +29,7 @@ function Competences() {
     'Adaptabilité',
   ];
   return (
-    <section className="px-76 p-32 flex flex-col gap-16">
+    <section className="px-76 p-32 flex flex-col gap-12">
       <SectionTitle
         sectionName="02. Compétences"
         contenu="Ce que je maîtrise"
@@ -49,12 +49,9 @@ function Competences() {
           <i className="fa-solid fa-layer-group text-indigo-400"></i>
           <h3>Soft Skills</h3>
         </div>
-        <ul className="flex-wrap text-xs flex gap-4 text-slate-400 ">
+        <ul className="flex-wrap text-xs flex gap-4 text-slate-400">
           {softSkills.map((skills) => (
-            <li
-              className="w-fill bg-indigo-900/30 rounded-2xl px-3 py-2"
-              key={skills}
-            >
+            <li className="bg-indigo-900/30 rounded-2xl px-3 py-2" key={skills}>
               {skills}
             </li>
           ))}
