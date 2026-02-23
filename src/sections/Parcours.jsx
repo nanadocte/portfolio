@@ -2,12 +2,12 @@ import SectionTitle from '../components/SectionTitle';
 
 function Parcours() {
   return (
-    <div className="px-76 p-32">
+    <section id="parcours" className="w-full m-auto p-32">
       <SectionTitle
         sectionName="04. Parcours"
         contenu="Mon parcours"
       ></SectionTitle>
-    </div>
+    </section>
   );
 }
 

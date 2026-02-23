@@ -1,6 +1,6 @@
 function ProjetCard({ img, titre, description, stack, github }) {
   return (
-    <article className="bg-slate-800/20 overflow-hidden w-full min-h-70 min-w-80  border border-white/10 rounded-2xl max-w-md flex flex-col gap-2">
+    <article className="bg-slate-800/20 overflow-hidden border border-white/10 rounded-2xl flex flex-col gap-2">
       <img
         className="opacity-70 rounded-t-2xl h-35 object-cover hover:scale-110 transition-all duration-800 "
         src={img}

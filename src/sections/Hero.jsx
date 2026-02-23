@@ -4,10 +4,10 @@ function Hero() {
   const [showButton, setShowButton] = useState(false);
   return (
     <section
-      className="font--jet px-48 h-screen pt-32 flex justify-center"
+      className=" w-full h-screen pt-32 px-32 flex justify-center"
       onMouseEnter={() => setShowButton(true)}
     >
-      <div className="group/bienvenue flex flex-col justify-center items-center gap-12">
+      <div className="max-w-5xl m-auto group/bienvenue flex flex-col justify-center items-center gap-12">
         <p
           className="font--montserrat z-2 fixed opacity-0 group-hover/bienvenue:opacity-20 font-semibold transition-opacity duration-1500 text-9xl
           absolute top-[42%] right-[60%] rotate-[270deg] bg-gradient-to-r from-indigo-800 
@@ -15,46 +15,38 @@ function Hero() {
         >
           Bienvenue
         </p>
-        <p className="font--jet text-indigo-400 text-3xl">
+        <p className="text-indigo-400 text-xl sm:text-2xl lg:text-3xl">
           Développeuse web junior
         </p>
-        <div className="flex flex-row flex-wrap items-center justify-center gap-4">
-          <p className="font-semibold tracking-tighter leading-none text-slate-200 text-8xl flex-shrink-0 flex items-center gap-0">
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          {/* Moi c'est Anne */}
+          <p className="flex items-center gap-2 font-semibold tracking-tighter text-6xl sm:text-7xl  lg:text-8xl">
             Moi c'est
-            <span
-              className="font-semibold ml-15 relative text-8xl tracking-tighter
-              bg-gradient-to-r from-yellow-300 to-pink-500 bg-clip-text text-transparent"
-            >
+            <span className="relative ml-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-500">
+              {/* Texte principal */}
               Anne
-              <span
-                className="font-semibold absolute left-0 top-0 w-full font-bold text-8xl tracking-tighter
-                bg-gradient-to-r from-yellow-300 to-pink-500 bg-clip-text text-transparent blur-xl opacity-50 select-none pointer-events-none"
-              >
+              {/* Flou */}
+              <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-500 blur-xl opacity-50 pointer-events-none select-none">
                 Anne
               </span>
             </span>
           </p>
 
-          <div className="relative w-auto">
-            <span
-              className="font-semibold tracking-tighter absolute left-0 top-0 w-full text-8xl 
-              bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600
-              bg-clip-text text-transparent blur-xl opacity-50 select-none pointer-events-none"
-            >
+          {/* Goulamougaidine */}
+          <div className="relative text-6xl sm:text-7xl lg:text-8xl font-semibold tracking-tighter">
+            {/* Flou */}
+            <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600 blur-xl opacity-50 pointer-events-none select-none">
               Goulamougaidine
             </span>
 
-            <h1
-              className="font-semibold tracking-tighter relative text-8xl 
-              bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600
-              bg-clip-text text-transparent"
-            >
+            {/* Texte principal */}
+            <h1 className="relative text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600">
               Goulamougaidine
             </h1>
           </div>
         </div>
 
-        <p className="font--jet text-slate-400 text-xl text-center">
+        <p className="font--jet text-slate-400 text-base sm:text-lg lg:text-xl text-center">
           Je conçois et développe des expériences web modernes, performantes et
           centrées sur l'utilisateur
         </p>

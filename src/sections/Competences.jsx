@@ -29,12 +29,15 @@ function Competences() {
     'Adaptabilité',
   ];
   return (
-    <section className="px-56 p-32 flex flex-col gap-12">
+    <section
+      id="skills"
+      className="w-full p-32 flex flex-col gap-12 max-w-7xl mx-auto"
+    >
       <SectionTitle
         sectionName="02. Compétences"
         contenu="Ce que je maîtrise"
       />
-      <div className="w-full flex flex-row flex-wrap gap-8 justify-center">
+      <div className="grid gap-8 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))]">
         {stack.map((stack) => (
           <SkillCard
             key={stack.titre}
