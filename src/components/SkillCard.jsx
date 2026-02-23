@@ -1,7 +1,7 @@
 function SkillCard({ logo, titre, contenu }) {
   return (
     <article
-      className=" bg-[#020617] w-full flex border border-white/10  
+      className="bg-slate-800/20 w-full flex border border-white/5  
       rounded-xl 
       p-8 
       flex flex-col gap-4 

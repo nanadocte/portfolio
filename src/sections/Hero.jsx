@@ -4,7 +4,7 @@ function Hero() {
   const [showButton, setShowButton] = useState(false);
   return (
     <section
-      className="px-48 h-screen pt-32 flex justify-center"
+      className="font--jet px-48 h-screen pt-32 flex justify-center"
       onMouseEnter={() => setShowButton(true)}
     >
       <div className="group/bienvenue flex flex-col justify-center items-center gap-12">
@@ -19,15 +19,15 @@ function Hero() {
           Développeuse web junior
         </p>
         <div className="flex flex-row flex-wrap items-center justify-center gap-4">
-          <p className="font-bold tracking-tighter leading-none text-slate-200 text-8xl flex-shrink-0 flex items-center gap-0">
+          <p className="font-semibold tracking-tighter leading-none text-slate-200 text-8xl flex-shrink-0 flex items-center gap-0">
             Moi c'est
             <span
-              className="font-bold ml-15 relative text-8xl tracking-tighter
+              className="font-semibold ml-15 relative text-8xl tracking-tighter
               bg-gradient-to-r from-yellow-300 to-pink-500 bg-clip-text text-transparent"
             >
               Anne
               <span
-                className="font-bold absolute left-0 top-0 w-full font-bold text-8xl tracking-tighter
+                className="font-semibold absolute left-0 top-0 w-full font-bold text-8xl tracking-tighter
                 bg-gradient-to-r from-yellow-300 to-pink-500 bg-clip-text text-transparent blur-xl opacity-50 select-none pointer-events-none"
               >
                 Anne
@@ -37,7 +37,7 @@ function Hero() {
 
           <div className="relative w-auto">
             <span
-              className="font-bold tracking-tighter absolute left-0 top-0 w-full text-8xl 
+              className="font-semibold tracking-tighter absolute left-0 top-0 w-full text-8xl 
               bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600
               bg-clip-text text-transparent blur-xl opacity-50 select-none pointer-events-none"
             >
@@ -45,7 +45,7 @@ function Hero() {
             </span>
 
             <h1
-              className="font-bold tracking-tighter relative text-8xl 
+              className="font-semibold tracking-tighter relative text-8xl 
               bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600
               bg-clip-text text-transparent"
             >

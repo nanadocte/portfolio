@@ -1,15 +1,7 @@
 import SectionTitle from '../components/SectionTitle';
+import annephoto from '/photo-anne222.png';
 
 function About() {
-  const stack = [
-    'HTML5',
-    'CSS3',
-    'JavaScript',
-    'React',
-    'Tailwind CSS',
-    'Node.js',
-    'Git',
-  ];
   return (
     <section className="px-76 p-32 bg-[#020617]  w-full flex flex-col gap-12 justify-between">
       <div className="">
@@ -28,18 +20,12 @@ function About() {
           cherche actuellement une opportunité pour consolider mes compétences
           dans un environnement professionnel stimulant.
         </p>
-        <div className="w-50 flex flex-col">
-          <p className="pb-5 text-slate-200 mb-2 font-bold">Stack technique</p>
-          <ul className="flex flex-row gap-5 flex-wrap">
-            {stack.map((techno, index) => (
-              <li
-                className="bg-slate-800 py-1 px-2 rounded-2xl text-xs text-slate-400"
-                key={index}
-              >
-                <button>{techno}</button>
-              </li>
-            ))}
-          </ul>
+
+        <div>
+          <img
+            className="w-50 h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
+            src={annephoto}
+          ></img>
         </div>
       </div>
     </section>
