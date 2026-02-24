@@ -1,6 +1,6 @@
 function Form() {
   return (
-    <form className="max-w-2xl w-full bg-slate-900/30 p-5 rounded-xl flex flex-col gap-8 justify-center items-start">
+    <form className="z-10 max-w-2xl w-full bg-slate-900/30 p-5 rounded-xl flex flex-col gap-8 justify-center items-start">
       <div className="w-full flex flex-col gap-2 justify-center">
         <label htmlFor="name">Nom</label>
         <input

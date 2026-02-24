@@ -1,6 +1,6 @@
 function SectionTitle({ sectionName, contenu }) {
   return (
-    <div className="font--jet">
+    <div className="z-10 font--jet">
       <p className="text-indigo-400">{sectionName}</p>
       <h2 className="text-slate-200 text-4xl">
         {contenu}

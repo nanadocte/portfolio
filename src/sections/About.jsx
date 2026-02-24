@@ -23,10 +23,17 @@ function About() {
           </p>
 
           <div>
-            <img
-              className="w-50 h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
-              src={annephoto}
-            ></img>
+            <div className="relative flex items-center">
+              <div
+                className=" absolute bg-gradient-to-r from-indigo-400 to-purple-400 
+          blur-2xl opacity-5 rounded-full
+          w-30 h-20 sm:w-40 sm:h-28 md:w-50 md:h-50 pointer-events-none"
+              ></div>
+              <img
+                className="z-1 w-50 h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
+                src={annephoto}
+              ></img>
+            </div>
           </div>
         </div>
       </div>

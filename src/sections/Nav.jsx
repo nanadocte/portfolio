@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Nav() {
+  const [scroll, setScroll] = useState(false);
   const [open, setOpen] = useState(false);
   const lienNav = [
     { label: 'À propos', id: 'about' },
@@ -9,8 +10,21 @@ function Nav() {
     { label: 'Parcours', id: 'parcours' },
     { label: 'Contact', id: 'contact' },
   ];
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5) setScroll(true);
+      else setScroll(false);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
-    <nav className="justify-between p-5 border-b border-gray-900/20 backdrop-blur-md bg-gray-950/70  font--jet  z-1 item-center fixed bg-gray-950 flex flex-rowp-5 w-full">
+    <nav
+      className={`z-2 justify-between p-5 backdrop-blur-md 
+    bg-gray-950/70  font--jet  z-1 item-center fixed bg-gray-950 flex flex-rowp-5 w-full
+    transition-all duration-300
+    ${scroll ? 'border-b border-gray-900/30' : 'border-b border-transparent'}`}
+    >
       <div className="md:hidden flex gap-5 flex-col">
         <div onClick={() => setOpen(!open)}>
           <div className="w-6 h-0.5 bg-slate-400 mb-1"></div>
@@ -25,10 +39,10 @@ function Nav() {
                   onClick={() => setOpen(false)}
                   href={`#${contenu.id}`}
                   className="text-slate-400 hover:bg-gradient-to-r 
-                hover:from-indigo-400 
-                hover:to-purple-600
-                hover:bg-clip-text 
-                hover:text-transparent cursor-pointer transition-colors duration-500"
+                  hover:from-indigo-400 
+                  hover:to-purple-600
+                  hover:bg-clip-text 
+                  hover:text-transparent cursor-pointer transition-colors duration-500"
                 >
                   {' '}
                   {contenu.label}

@@ -8,7 +8,7 @@ function Projets() {
   const uniqueStack = [...new Set(projets.flatMap((projet) => projet.stack))];
   return (
     <section id="project" className=" w-full p-32 bg-[#020617] ">
-      <div className=" w-full max-w-5xl m-auto flex flex-col gap-3">
+      <div className=" w-full max-w-4xl m-auto flex flex-col gap-3">
         <SectionTitle sectionName="03. Projets" contenu="Mes réalisations" />
         <ul className="flex flex-wrap gap-5 text-sm mb-6">
           <li

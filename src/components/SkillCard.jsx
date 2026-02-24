@@ -2,8 +2,7 @@ function SkillCard({ logo, titre, contenu }) {
   return (
     <article
       className="bg-slate-800/20 border border-white/5 rounded-xl p-8 flex flex-col gap-4 
-      text-start shadow-[0_0_10px_rgba(139,92,246,0.1)] hover:shadow-[0_0_10px_rgba(139,92,246,0.4)] 
-      transition-shadow duration-300"
+      text-start shadow-[0_0_10px_rgba(139,92,246,0.1)]"
     >
       <i className={`opacity-70 ${logo}`}></i>
       <h3>{titre}</h3>
