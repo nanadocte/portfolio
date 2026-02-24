@@ -21,7 +21,7 @@ function Nav() {
   return (
     <nav
       className={` justify-between p-5 backdrop-blur-md 
-      font--jet  z-1 item-center fixed bg-gray-950 flex flex-rowp-5 w-full
+      font-mono  z-2 items-center fixed bg-gray-950/70 flex flex-rowp-5 w-full
     transition-all duration-300
     ${scroll ? 'border-b border-gray-900/30' : 'border-b border-transparent'}`}
     >

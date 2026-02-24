@@ -6,7 +6,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return (
-    <section id="contact" className="w-full py-20 xs:py-32 px-5 pb-10 bg-dark">
+    <section
+      id="contact"
+      className="w-full py-20 xs:py-32 xs:pb-10 px-5 pb-10 bg-dark"
+    >
       <div className="group/flou m-auto max-w-5xl flex flex-col gap-12 items-center ">
         <div className="relative flex items-center">
           <SectionTitle

@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="w-full py-20 xs:py-32 px-5 bg-dark overflow-hidden "
+      className="w-full py-20 md:py-32 px-5 bg-dark overflow-hidden "
     >
       <div className="max-w-4xl mx-auto px-8 py-20 flex flex-col gap-12 justify-between">
         <div>
@@ -35,7 +35,7 @@ function About() {
               <img
                 alt="Photo de présentation"
                 loading="lazy"
-                className="z-1 w-30 h-30 lg:w-50 lg:h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
+                className="z-1 xs:w-50 xs:h-50 w-30 h-30 object-cover rounded-full hover:scale-120 transition-all duration-800"
                 src={annephoto}
               ></img>
             </div>

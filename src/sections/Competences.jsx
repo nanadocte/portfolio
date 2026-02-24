@@ -41,7 +41,7 @@ function Competences() {
   return (
     <section
       id="skills"
-      className="w-full py-20 xs:py-32 px-10 flex flex-col gap-12 max-w-7xl mx-auto"
+      className="w-full py-20 md:py-32 px-10 flex flex-col gap-12 max-w-7xl mx-auto"
     >
       <SectionTitle
         sectionName="02. Compétences"

@@ -17,6 +17,8 @@
   --font-sans: 'Montserrat', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --color-dark: #020617;
+
+  --breakpoint-xs: 425px;
 }
 
 @layer components {

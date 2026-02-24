@@ -15,7 +15,7 @@ function Hero() {
   }, []);
   return (
     <section
-      className=" w-full h-screen pt-32 px-10 flex justify-center"
+      className=" w-full md:h-screen pb-12 pt-50 md:pt-32 px-10 flex justify-center items-center"
       onMouseEnter={() => setShowButton(true)}
     >
       <div className="max-w-5xl m-auto group/bienvenue flex flex-col justify-center items-center gap-8 sm:gap-10 lg:gap-12">
@@ -33,7 +33,7 @@ function Hero() {
           Développeuse web junior
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <p className="text-slate-200 flex flex-wrap items-center gap-2 font-semibold tracking-tighter text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          <p className="text-slate-200 flex flex-wrap items-center gap-2 font-semibold tracking-tighter text-4xl xs:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             Moi c'est
             <span className="relative ml-4 text-transparent bg-clip-text bg-linear-to-r from-yellow-300 to-pink-500">
               Anne
@@ -43,7 +43,7 @@ function Hero() {
             </span>
           </p>
 
-          <div className="relative text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-tighter">
+          <div className="relative text-4xl xs:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-tighter">
             <span className="absolute inset-0 text-transparent bg-clip-text bg-linear-to-r from-yellow-300 via-pink-500 to-purple-600 blur-xl opacity-50 pointer-events-none select-none">
               Goulamougaidine
             </span>

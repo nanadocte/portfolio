@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <p>© 2026</p>
+      <p className="text-center p-5 text-xs">Anne Goulamougaidine © 2026</p>
     </>
   );
 }
