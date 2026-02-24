@@ -3,7 +3,10 @@ import annephoto from '/photo-anne222.png';
 
 function About() {
   return (
-    <section id="about" className="w-full p-32 bg-[#020617] ">
+    <section
+      id="about"
+      className="w-full py-20 xs:py-32 px-5 bg-dark overflow-hidden "
+    >
       <div className="max-w-4xl mx-auto px-8 py-20 flex flex-col gap-12 justify-between">
         <div>
           <SectionTitle
@@ -11,11 +14,11 @@ function About() {
             contenu="Qui suis-je"
           ></SectionTitle>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <p className="text-slate-400 flex-1">
+        <div className="flex flex-col md:flex-row items-center gap-16">
+          <p className="flex-1">
             Passionnée par le développement web, je suis en reconversion
             professionnelle dans le domaine du web. Mon objectif : créer des
-            interfaces modernes, accessibles et performantes. <br />
+            interfaces modernes, accessibles et performantes. <br /> <br />
             Curieuse et autodidacte, j'aime explorer les nouvelles technologies
             et appliquer les bonnes pratiques pour livrer des projets de
             qualité. Je cherche actuellement une opportunité pour consolider mes
@@ -23,14 +26,14 @@ function About() {
           </p>
 
           <div>
-            <div className="relative flex items-center">
+            <div className="relative flex items-center ">
               <div
-                className=" absolute bg-gradient-to-r from-indigo-400 to-purple-400 
+                className=" absolute bg-linear-to-r from-indigo-400 to-purple-400 
           blur-2xl opacity-5 rounded-full
           w-30 h-20 sm:w-40 sm:h-28 md:w-50 md:h-50 pointer-events-none"
               ></div>
               <img
-                className="z-1 w-50 h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
+                className="z-1 w-30 h-30 lg:w-50 lg:h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
                 src={annephoto}
               ></img>
             </div>

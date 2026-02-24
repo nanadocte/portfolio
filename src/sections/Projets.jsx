@@ -7,23 +7,23 @@ function Projets() {
   const [buttonActif, setButtonActif] = useState('Tous');
   const uniqueStack = [...new Set(projets.flatMap((projet) => projet.stack))];
   return (
-    <section id="project" className=" w-full p-32 bg-[#020617] ">
+    <section id="project" className=" w-full py-20 xs:py-32 px-10 bg-dark ">
       <div className=" w-full max-w-4xl m-auto flex flex-col gap-3">
         <SectionTitle sectionName="03. Projets" contenu="Mes réalisations" />
         <ul className="flex flex-wrap gap-5 text-sm mb-6">
           <li
-            className={`md:text-base text-sm hover:bg-gradient-to-r hover:from-indigo-800  hover:to-purple-600  bg-slate-800 
+            className={`md:text-base text-sm hover:bg-linear-to-r hover:from-indigo-800  hover:to-purple-600  bg-slate-800 
         py-1 px-3 rounded-2xl text-slate-400
-        ${buttonActif === 'Tous' ? 'bg-gradient-to-r from-indigo-800 to-purple-600' : 'bg-slate-800'}`}
+        ${buttonActif === 'Tous' ? 'bg-linear-to-r from-indigo-800 to-purple-600' : 'bg-slate-800'}`}
             onClick={() => setButtonActif('Tous')}
           >
             Tous
           </li>
           {uniqueStack.map((projet) => (
             <li
-              className={`md:text-base text-sm hover:bg-gradient-to-r hover:from-indigo-800  hover:to-purple-600 bg-slate-800 
+              className={`md:text-base text-sm hover:bg-linear-to-r hover:from-indigo-800  hover:to-purple-600 bg-slate-800 
             py-1 px-3 rounded-2xl text-slate-400
-            ${buttonActif === projet ? 'bg-gradient-to-r from-indigo-800 to-purple-600' : 'bg-slate-800'}
+            ${buttonActif === projet ? 'bg-linear-to-r from-indigo-800 to-purple-600' : 'bg-slate-800'}
             `}
               onClick={() => setButtonActif(projet)}
               key={projet}
@@ -32,7 +32,7 @@ function Projets() {
             </li>
           ))}
         </ul>
-        <div className="justify-center gap-8 grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+        <div className="justify-center gap-8 grid grid-cols-[repeat(auto-fit,minmax(400px,2fr))]">
           {projets
             .filter(
               (projet) =>

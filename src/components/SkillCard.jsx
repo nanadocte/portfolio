@@ -5,8 +5,8 @@ function SkillCard({ logo, titre, contenu }) {
       text-start shadow-[0_0_10px_rgba(139,92,246,0.1)]"
     >
       <i className={`opacity-70 ${logo}`}></i>
-      <h3>{titre}</h3>
-      <ul className="text-slate-400 text-xs flex flex-col gap-2 items-start">
+      <h3 className="text-slate-200 xl:text-xl">{titre}</h3>
+      <ul className="text-slate-400 text-xs xl:text-sm flex flex-col gap-2 items-start">
         {contenu.map((contain, index) => (
           <li key={index}>{contain}</li>
         ))}

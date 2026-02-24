@@ -31,13 +31,13 @@ function Competences() {
   return (
     <section
       id="skills"
-      className="w-full p-32 flex flex-col gap-12 max-w-7xl mx-auto"
+      className="w-full py-20 xs:py-32 px-10 flex flex-col gap-12 max-w-7xl mx-auto"
     >
       <SectionTitle
         sectionName="02. Compétences"
         contenu="Ce que je maîtrise"
       />
-      <div className="grid gap-8 [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))]">
+      <div className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
         {stack.map((stack) => (
           <SkillCard
             key={stack.titre}
@@ -50,9 +50,11 @@ function Competences() {
       <div className="flex flex-col gap-3">
         <div className="flex gap-2">
           <i className="fa-solid fa-layer-group text-indigo-400"></i>
-          <h3>Soft Skills</h3>
+          <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+            Soft Skills
+          </h3>
         </div>
-        <ul className="flex-wrap text-xs flex gap-4 text-slate-400">
+        <ul className="flex-wrap text-xs xl:text-sm  flex gap-4 text-slate-400 justify-center sm:justify-start">
           {softSkills.map((skills) => (
             <li className="bg-indigo-900/30 rounded-2xl px-3 py-2" key={skills}>
               {skills}
