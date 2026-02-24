@@ -50,7 +50,7 @@ function Competences() {
       <div className="flex flex-col gap-3">
         <div className="flex gap-2">
           <i className="fa-solid fa-layer-group text-indigo-400"></i>
-          <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          <h3 className="text-slate-200 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             Soft Skills
           </h3>
         </div>

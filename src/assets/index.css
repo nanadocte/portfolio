@@ -21,7 +21,7 @@
 
 @layer components {
   p {
-    @apply text-sm sm:text-base xl:text-lg text-slate-400;
+    @apply text-xs sm:text-sm xl:text-base text-slate-400;
   }
   button {
     @apply bg-linear-to-r from-indigo-500/60 to-purple-800/60 text-slate-200 text-sm sm:text-base py-2 sm:py-2.5 px-5 sm:px-6 rounded-2xl;

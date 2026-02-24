@@ -32,7 +32,7 @@ function Projets() {
             </li>
           ))}
         </ul>
-        <div className="justify-center gap-8 grid grid-cols-[repeat(auto-fit,minmax(400px,2fr))]">
+        <div className="justify-center gap-8 grid grid-cols-[repeat(auto-fit,minmax(320px,2fr))]">
           {projets
             .filter(
               (projet) =>
