@@ -21,9 +21,10 @@ function Nav() {
   return (
     <nav
       className={` justify-between p-5 backdrop-blur-md 
-      font-mono  z-2 items-center fixed bg-gray-950/70 flex flex-rowp-5 w-full
+      font-mono  z-2 items-center fixed flex flex-rowp-5 w-full
     transition-all duration-300
-    ${scroll ? 'border-b border-gray-900/30' : 'border-b border-transparent'}`}
+    ${scroll ? 'border-b border-gray-900/30' : 'border-b border-transparent'}
+    ${open ? 'bg-gray-950' : 'bg-gray-950/70'}`}
     >
       <div className="md:hidden flex gap-5 flex-col">
         <div onClick={() => setOpen(!open)}>
@@ -53,7 +54,9 @@ function Nav() {
         )}
       </div>
 
-      <p className="opacity-80 text-xl bg-linear-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent">
+      <p
+        className={`opacity-80 text-xl bg-linear-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent ${open ? 'self-start' : 'self-center'}`}
+      >
         Porfolio
       </p>
 

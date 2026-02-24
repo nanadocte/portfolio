@@ -14,19 +14,19 @@ function Competences() {
       logo: faCode,
       color: 'text-yellow-300',
       titre: 'Front-end',
-      contenu: ['React', 'Tailwind CSS'],
+      contenu: ['HTML/CSS', 'Javascript', 'Tailwind CSS', 'React'],
     },
     {
       logo: faDatabase,
       color: 'text-pink-500',
       titre: 'Back-end',
-      contenu: ['Node.js', 'Express'],
+      contenu: ['Node.js', 'Express', 'NoSql'],
     },
     {
       logo: faScrewdriverWrench,
       color: 'text-purple-600',
       titre: 'Outils',
-      contenu: ['Git', 'Vite'],
+      contenu: ['Git', 'Linux system'],
     },
   ];
 
