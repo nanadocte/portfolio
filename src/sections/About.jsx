@@ -7,7 +7,7 @@ function About() {
       id="about"
       className="w-full py-20 md:py-32 px-5 bg-dark overflow-hidden "
     >
-      <div className="max-w-4xl mx-auto px-8 py-20 flex flex-col gap-12 justify-between">
+      <div className="max-w-4xl mx-auto px-8 xs:py-20 flex flex-col gap-12 justify-between">
         <div>
           <SectionTitle
             sectionName="01. À propos"
