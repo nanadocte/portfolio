@@ -11,16 +11,18 @@ import Footer from './sections/Footer';
 
 function App() {
   return (
-    <div className="bg-gray-950">
+    <>
       <Nav></Nav>
-      <Hero></Hero>
-      <About></About>
-      <Competences />
-      <Projets />
-      <Parcours />
-      <Contact />
-      <Footer />
-    </div>
+      <main className="bg-gray-950">
+        <Hero></Hero>
+        <About></About>
+        <Competences />
+        <Projets />
+        <Parcours />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }
 

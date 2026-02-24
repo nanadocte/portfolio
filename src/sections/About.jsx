@@ -33,6 +33,8 @@ function About() {
           w-30 h-20 sm:w-40 sm:h-28 md:w-50 md:h-50 pointer-events-none"
               ></div>
               <img
+                alt="Photo de présentation"
+                loading="lazy"
                 className="z-1 w-30 h-30 lg:w-50 lg:h-50 object-cover rounded-full hover:scale-120 transition-all duration-800"
                 src={annephoto}
               ></img>

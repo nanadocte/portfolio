@@ -1,16 +1,14 @@
 import SectionTitle from '../components/SectionTitle';
 import Form from '../components/Form';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return (
     <section id="contact" className="w-full py-20 xs:py-32 px-5 pb-10 bg-dark">
       <div className="group/flou m-auto max-w-5xl flex flex-col gap-12 items-center ">
         <div className="relative flex items-center">
-          {/* <div
-            className="z-0 group-hover/flou:opacity-5 transition-all duration-1000 -translate-x-1/4 absolute bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-600 
-          blur-2xl opacity-0 rounded-full
-          w-30 h-20 sm:w-40 sm:h-28 md:w-70 md:h-60 pointer-events-none"
-          ></div> */}
           <SectionTitle
             sectionName="05. Contact"
             contenu="Travaillons ensemble"
@@ -20,18 +18,33 @@ function Contact() {
 
         <ul className="flex gap-8">
           <li>
-            <a href="#">
-              <i className="fa-brands fa-github"></i>{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Lien vers mon GitHub"
+              href="https://github.com/nanadocte"
+            >
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href="#">
-              <i className="fa-brands fa-linkedin-in"></i>{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Lien vers mon Linkedin"
+              href="https://www.linkedin.com/in/anne-goulamougaidine/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a href="#">
-              <i className="fa-solid fa-envelope"></i>{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Lien pour m'écrire un mail"
+              href="mailto:goulamougaidine.anne@outlook.com"
+            >
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
         </ul>

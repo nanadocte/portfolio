@@ -4,7 +4,7 @@ function ParcoursCard({ date, nom, info, description, align }) {
       <div
         className={`flex flex-col ${align === 'right' ? 'sm:items-start' : 'sm:items-end'} `}
       >
-        <h4 className="text-indigo-400">{date}</h4>
+        <p className="text-indigo-400">{date}</p>
         <h3 className="text-slate-200 text-sm sm:text-base md:text-base lg:text-lg xl:text-xl">
           {nom}
         </h3>

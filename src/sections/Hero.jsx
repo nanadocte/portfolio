@@ -53,8 +53,8 @@ function Hero() {
           </div>
         </div>
         <p className="text-sm sm:text-lg lg:text-xl text-center">
-          Je conçois et développe des expériences web modernes, performantes et
-          centrées sur l'utilisateur
+          Je conçois des expériences digitales modernes, rapides et intuitives
+          pour chaque utilisateur.
         </p>
         <button
           className={`

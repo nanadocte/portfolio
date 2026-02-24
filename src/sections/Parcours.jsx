@@ -6,7 +6,7 @@ function Parcours() {
     {
       date: '2025',
       nom: 'Formation Développeur Web',
-      info: 'OpenClassroom - Diplôme niveau 5',
+      info: 'OpenClassroom - Diplôme niveau 5 (bac +2)',
       description:
         'Apprentissage front et back-end. Projets en React et Node.js.',
     },
@@ -15,12 +15,12 @@ function Parcours() {
       nom: 'Début de la reconversion',
       info: 'Autodidacte',
       description:
-        'Découverte de la programmation en autodidacte. HTML, CSS, JS, Odin Project.',
+        'Découverte autodidacte de la programmation en s’appuyant sur les fondations HTML, CSS et JavaScript du projet Odin.',
     },
     {
       date: '2023',
-      nom: 'Diplôme de psychomotricité',
-      info: 'Soft skills acquis',
+      nom: 'Psychomotricienne',
+      info: "Diplôme d'état (bac +3)",
       description:
         'Compétences relationnelles et organisationnelles pour le travail en équipe.',
     },

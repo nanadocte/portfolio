@@ -1,22 +1,32 @@
 import SectionTitle from '../components/SectionTitle';
 import SkillCard from '../components/SkillCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faCode,
+  faDatabase,
+  faScrewdriverWrench,
+  faLayerGroup,
+} from '@fortawesome/free-solid-svg-icons';
 
 function Competences() {
   const stack = [
     {
-      logo: 'fa-solid fa-code text-yellow-300',
+      logo: faCode,
+      color: 'text-yellow-300',
       titre: 'Front-end',
-      contenu: ['React', 'Tailwind CSS', 'HTML5 / CSS3', 'Responsive Design'],
+      contenu: ['React', 'Tailwind CSS'],
     },
     {
-      logo: 'fa-solid fa-database text-pink-500',
+      logo: faDatabase,
+      color: 'text-pink-500',
       titre: 'Back-end',
-      contenu: ['React', 'Tailwind CSS', 'HTML5 / CSS3', 'Responsive Design'],
+      contenu: ['Node.js', 'Express'],
     },
     {
-      logo: 'fa-solid fa-screwdriver-wrench text-purple-600',
+      logo: faScrewdriverWrench,
+      color: 'text-purple-600',
       titre: 'Outils',
-      contenu: ['React', 'Tailwind CSS', 'HTML5 / CSS3', 'Responsive Design'],
+      contenu: ['Git', 'Vite'],
     },
   ];
 
@@ -43,20 +53,24 @@ function Competences() {
             key={stack.titre}
             logo={stack.logo}
             titre={stack.titre}
+            color={stack.color}
             contenu={stack.contenu}
           ></SkillCard>
         ))}
       </div>
       <div className="flex flex-col gap-3">
-        <div className="flex gap-2">
-          <i className="fa-solid fa-layer-group text-indigo-400"></i>
+        <div className=" gap-2 flex items-center">
+          <FontAwesomeIcon icon={faLayerGroup} className="text-indigo-400" />
           <h3 className="text-slate-200 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             Soft Skills
           </h3>
         </div>
         <ul className="flex-wrap text-xs xl:text-sm  flex gap-4 text-slate-400 justify-center sm:justify-start">
           {softSkills.map((skills) => (
-            <li className="bg-indigo-900/30 rounded-2xl px-3 py-2" key={skills}>
+            <li
+              className="  bg-indigo-900/30 rounded-2xl px-3 py-2"
+              key={skills}
+            >
               {skills}
             </li>
           ))}
