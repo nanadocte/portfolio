@@ -30,7 +30,7 @@ function Parcours() {
     <section className="max-w-5xl w-full m-auto py-20 px-5 flex flex-col gap-12">
       <SectionTitle sectionName="04. Parcours" contenu="Mon parcours" />
 
-      <div className="md:pt-20 flex flex-col gap-8 border-l sm:border-0 pl-10 border-indigo-400/40 ">
+      <div className="md:pt-20 flex flex-col gap-8 border-l sm:border-0 pl-10 border-indigo-800/40 ">
         {parcours.map((item, index) => {
           const isLeft = index % 2 === 0;
           return (
