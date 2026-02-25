@@ -1,5 +1,5 @@
-import SectionTitle from '../components/SectionTitle';
-import SkillCard from '../components/SkillCard';
+import SectionTitle from '../../../components/SectionTitle';
+import SkillCard from '../../../components/SkillCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode,
@@ -14,28 +14,29 @@ function Competences() {
       logo: faCode,
       color: 'text-yellow-300',
       titre: 'Front-end',
-      contenu: ['HTML/CSS', 'Javascript', 'Tailwind CSS', 'React'],
+      contenu: ['HTML5 / CSS3', 'JavaScript', 'Tailwind CSS', 'React'],
     },
     {
       logo: faDatabase,
       color: 'text-pink-500',
       titre: 'Back-end',
-      contenu: ['Node.js', 'Express', 'NoSql'],
+      contenu: ['Node.js', 'Express', 'MongoDB'],
     },
     {
       logo: faScrewdriverWrench,
       color: 'text-purple-600',
-      titre: 'Outils',
-      contenu: ['Git', 'Linux system'],
+      titre: 'Outils & Environnement',
+      contenu: ['Git / GitHub', 'Linux system'],
     },
   ];
 
   const softSkills = [
-    'Curiosité technique',
+    'Curiosité',
     "Esprit d'équipe",
+    'Capacité d’analyse',
     'Autonomie',
-    'Résolution de problèmes',
-    'Communication',
+    'Sens du détail',
+    'Communication claire',
     'Adaptabilité',
   ];
   return (

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   const [scroll, setScroll] = useState(false);
@@ -53,12 +54,13 @@ function Nav() {
           </ul>
         )}
       </div>
-
-      <p
-        className={`opacity-80 text-xl bg-linear-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent ${open ? 'self-start' : 'self-center'}`}
-      >
-        Porfolio
-      </p>
+      <Link to={`/`}>
+        <p
+          className={`opacity-80 text-xl bg-linear-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent ${open ? 'self-start' : 'self-center'}`}
+        >
+          Porfolio
+        </p>
+      </Link>
 
       <ul className="hidden md:flex text-sm lg:text-base gap-8 lg:gap-10 flex-row text-slate-400">
         {lienNav.map((contenu, index) => (

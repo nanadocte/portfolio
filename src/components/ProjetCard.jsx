@@ -6,7 +6,7 @@ function ProjetCard({ img, titre, description, stack, github }) {
     <article className="max-h-72 sm:max-h-80 md:max-h-96 bg-slate-800/20 overflow-hidden border border-white/10 rounded-2xl flex flex-col gap-2">
       <img
         loading="lazy"
-        className="opacity-70 rounded-t-2xl h-48 sm:h-50   w-full object-cover hover:scale-110 transition-all duration-300"
+        className="opacity-60 rounded-t-2xl h-48 sm:h-50   w-full object-cover hover:scale-110 transition-all duration-300"
         src={img}
         alt={titre}
       ></img>

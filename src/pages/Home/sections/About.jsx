@@ -1,5 +1,5 @@
-import SectionTitle from '../components/SectionTitle';
-import annephoto from '/photo-anne222.png';
+import SectionTitle from '../../../components/SectionTitle';
+import annephoto from '/img/photo-anne222.png';
 
 function About() {
   return (
@@ -16,13 +16,20 @@ function About() {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-16">
           <p className="flex-1">
-            Passionnée par le développement web, je suis en reconversion
-            professionnelle dans le domaine du web. Mon objectif : créer des
-            interfaces modernes, accessibles et performantes. <br /> <br />
-            Curieuse et autodidacte, j'aime explorer les nouvelles technologies
-            et appliquer les bonnes pratiques pour livrer des projets de
-            qualité. Je cherche actuellement une opportunité pour consolider mes
-            compétences dans un environnement professionnel stimulant.
+            Attirée par la logique qui structure les systèmes, j’ai choisi de me
+            reconvertir dans le développement web, un domaine qui correspond
+            profondément à ma manière de réfléchir et de créer. J’aime
+            comprendre comment un besoin concret peut prendre forme à travers
+            une application, comment des contraintes humaines deviennent des
+            solutions utiles et cohérentes.
+            <br />
+            <br />
+            Curieuse et autodidacte, j’explore continuellement de nouvelles
+            technologies et veille à appliquer des pratiques solides pour
+            construire des projets clairs et durables. Fascinée de l'étendue des
+            possibilités qu’offre le web, je souhaite aujourd’hui rejoindre un
+            environnement professionnel stimulant pour continuer à progresser et
+            contribuer activement à des projets concrets.
           </p>
 
           <div>

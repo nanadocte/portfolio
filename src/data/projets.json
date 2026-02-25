@@ -1,19 +1,32 @@
 [
   {
     "id": 1,
-    "img": "/kasa.png",
-    "titre": "Kasa React",
-    "description": "Mon projet développé avec React.",
-    "stack": ["React"],
-    "github": null,
-    "demo": null
+    "slug": "kasa",
+    "img": "/img/kasa.png",
+    "titre": "Kasa – Application React",
+    "description": "Application immobilière développée en React avec navigation dynamique et architecture modulaire.",
+    "stack": ["React", "React Router", "Sass"],
+    "github": "https://github.com/nanadocte/Site-KASA-with-REACT.git",
+    "demo": null,
+    "contexte": "Développement d'une interface pour une application de location immobilière à partir d'une maquette fournie par le formateur.",
+    "objectifs": "Créer une application monopage fluide, structurée en composants réutilisables, avec navigation entre les pages et expérience utilisateur agréable.",
+    "competences": "Apprentissage des composants React, gestion du state et des props, mise en place de la navigation avec React Router, utilisation de Sass pour le style et animations CSS.",
+    "resultats": "Application responsive, navigation fluide, code modulaire et maintenable, respect de la maquette et bonnes pratiques front-end.",
+    "ameliorations": "Ajouter une gestion globale de l’état avec Context ou Redux, connecter l'application à une API réelle pour gérer les données dynamiquement."
   },
   {
     "id": 2,
-    "img": "/kasa.png",
-    "titre": "JSP ENCORE",
-    "description": "LLETS GO",
-    "stack": ["Node", "Express", "MongoDB"],
-    "github": null
+    "slug": "mon-vieux-grimoire",
+    "img": "/img/grimoire.png",
+    "titre": "Mon Vieux Grimoire – API REST",
+    "description": "API sécurisée avec authentification et opérations CRUD pour une plateforme de notation de livres.",
+    "stack": ["Node.js", "Express", "MongoDB"],
+    "github": "https://github.com/nanadocte/backend-dev-livres.git",
+    "demo": null,
+    "contexte": "Développement d’un serveur back-end pour gérer les données utilisateurs de manière sécurisée et conforme aux bonnes pratiques.",
+    "objectifs": "Mettre en place une API REST sécurisée, capable de gérer des opérations CRUD, avec authentification des utilisateurs et validation des données.",
+    "competences": "Modélisation de base de données MongoDB, sécurisation des routes Express, gestion des opérations CRUD, validation et traitement des erreurs côté serveur.",
+    "resultats": "API fonctionnelle permettant la gestion sécurisée des ressources, tests manuels réalisés, documentation et endpoints clairs pour intégration front-end.",
+    "ameliorations": "Ajouter des tests automatisés, journalisation des requêtes."
   }
 ]

@@ -1,5 +1,5 @@
-import SectionTitle from '../components/SectionTitle';
-import ParcoursCard from '../components/ParcoursCard';
+import SectionTitle from '../../../components/SectionTitle';
+import ParcoursCard from '../../../components/ParcoursCard';
 
 function Parcours() {
   const parcours = [

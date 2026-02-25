@@ -1,6 +1,7 @@
-import SectionTitle from '../components/SectionTitle';
-import projets from '../data/projets.json';
-import ProjetCard from '../components/ProjetCard';
+import SectionTitle from '../../../components/SectionTitle';
+import projets from '../../../data/projets.json';
+import ProjetCard from '../../../components/ProjetCard';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function Projets() {
@@ -39,14 +40,15 @@ function Projets() {
                 buttonActif === 'Tous' || projet.stack.includes(buttonActif)
             )
             .map((projet) => (
-              <ProjetCard
-                key={projet.id}
-                img={projet.img}
-                titre={projet.titre}
-                description={projet.description}
-                stack={projet.stack}
-                github={projet.github}
-              />
+              <Link key={projet.id} to={`/projet/${projet.slug}`}>
+                <ProjetCard
+                  img={projet.img}
+                  titre={projet.titre}
+                  description={projet.description}
+                  stack={projet.stack}
+                  github={projet.github}
+                />
+              </Link>
             ))}
         </div>
       </div>
