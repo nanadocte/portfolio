@@ -6,19 +6,35 @@ import projets from '../../data/projets.json';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 function App() {
   const { slug } = useParams();
   const projet = projets.find((item) => slug === item.slug);
   if (!projet)
     return (
-      <p className="font-mono text-center mt-20 text-indigo-400 text-lg font-semibold">
-        Projet introuvable
-      </p>
+      <div className="flex flex-col min-h-screen bg-dark">
+        <Nav />
+
+        <div className="flex-1 flex flex-col justify-center items-center gap-10">
+          <h1 className="font-mono text-center text-indigo-400 text-xl sm:text-8xl font-semibold tracking-wide">
+            Une erreur s'est produite
+          </h1>
+          <p className="font-mono text-center text-indigo-200 text-md sm:text-xl">
+            Ce projet est introuvable...
+          </p>
+          <Link className="font-mono text-slate-400" to={'/'}>
+            <button>Revenir à la page principale</button>
+          </Link>
+        </div>
+
+        <Footer />
+      </div>
     );
   return (
     <>
       <Nav></Nav>
+
       <main>
         <section className="font-mono w-full py-20 px-10 bg-dark min-h-screen">
           <div className="w-full max-w-7xl p-10 mx-auto flex flex-col gap-8">

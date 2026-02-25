@@ -13,7 +13,7 @@ function Projets() {
         <SectionTitle sectionName="03. Projets" contenu="Mes réalisations" />
         <ul className="flex flex-wrap gap-5 text-sm mb-6">
           <li
-            className={`md:text-base text-sm hover:bg-linear-to-r hover:from-indigo-800  hover:to-purple-600  bg-slate-800 
+            className={`cursor-pointer md:text-base text-sm hover:bg-linear-to-r hover:from-indigo-800  hover:to-purple-600  bg-slate-800 
         py-1 px-3 rounded-2xl text-slate-400
         ${buttonActif === 'Tous' ? 'bg-linear-to-r from-indigo-800 to-purple-600' : 'bg-slate-800'}`}
             onClick={() => setButtonActif('Tous')}
@@ -22,7 +22,7 @@ function Projets() {
           </li>
           {uniqueStack.map((projet) => (
             <li
-              className={`md:text-base text-sm hover:bg-linear-to-r hover:from-indigo-800  hover:to-purple-600 bg-slate-800 
+              className={`cursor-pointer md:text-base text-sm hover:bg-linear-to-r hover:from-indigo-800  hover:to-purple-600 bg-slate-800 
             py-1 px-3 rounded-2xl text-slate-400
             ${buttonActif === projet ? 'bg-linear-to-r from-indigo-800 to-purple-600' : 'bg-slate-800'}
             `}

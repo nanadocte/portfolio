@@ -27,7 +27,10 @@ function Parcours() {
   ];
 
   return (
-    <section className="max-w-5xl w-full m-auto py-20 px-5 flex flex-col gap-12">
+    <section
+      id="parcours"
+      className=" max-w-5xl w-full m-auto py-20 px-5 flex flex-col gap-12"
+    >
       <SectionTitle sectionName="04. Parcours" contenu="Mon parcours" />
 
       <div className="relative md:pt-20 flex flex-col gap-8 border-l sm:border-0 pl-10 border-indigo-800/40 ">

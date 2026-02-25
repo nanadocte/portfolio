@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Nav() {
+  const location = useLocation();
   const [scroll, setScroll] = useState(false);
   const [open, setOpen] = useState(false);
   const lienNav = [
@@ -37,18 +38,21 @@ function Nav() {
           <ul className="md:hidden  flex flex-col gap-5 text-sm md:text-base md:gap-10 text-slate-400">
             {lienNav.map((contenu, index) => (
               <li key={index}>
-                <a
-                  onClick={() => setOpen(false)}
-                  href={`#${contenu.id}`}
-                  className="text-slate-400 hover:bg-linear-to-r 
-                  hover:from-indigo-400 
-                  hover:to-purple-600
-                  hover:bg-clip-text 
-                  hover:text-transparent cursor-pointer transition-colors duration-500"
-                >
-                  {' '}
-                  {contenu.label}
-                </a>
+                {location.pathname === '/' ? (
+                  <a
+                    href={`#${contenu.id}`}
+                    className="text-slate-400 hover:bg-linear-to-r hover:from-indigo-400 hover:to-purple-600 hover:bg-clip-text hover:text-transparent cursor-pointer transition-colors duration-500"
+                  >
+                    {contenu.label}
+                  </a>
+                ) : (
+                  <Link
+                    to={`/#${contenu.id}`}
+                    className="text-slate-400 hover:bg-linear-to-r hover:from-indigo-400 hover:to-purple-600 hover:bg-clip-text hover:text-transparent cursor-pointer transition-colors duration-500"
+                  >
+                    {contenu.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -63,21 +67,29 @@ function Nav() {
       </Link>
 
       <ul className="hidden md:flex text-sm lg:text-base gap-8 lg:gap-10 flex-row text-slate-400">
-        {lienNav.map((contenu, index) => (
-          <li key={index}>
-            <a
-              href={`#${contenu.id}`}
-              className="text-slate-400 hover:bg-linear-to-r 
-              hover:from-indigo-400 
-              hover:to-purple-600
-              hover:bg-clip-text 
-              hover:text-transparent cursor-pointer transition-colors duration-500"
-            >
-              {' '}
-              {contenu.label}
-            </a>
-          </li>
-        ))}
+        {lienNav.map((contenu, index) => {
+          const onProjectPage = location.pathname.startsWith('/projet');
+
+          return (
+            <li key={index}>
+              {onProjectPage ? (
+                <Link
+                  to={`/#${contenu.id}`}
+                  className="text-slate-400 hover:bg-linear-to-r hover:from-indigo-400 hover:to-purple-600 hover:bg-clip-text hover:text-transparent cursor-pointer transition-colors duration-500"
+                >
+                  {contenu.label}
+                </Link>
+              ) : (
+                <a
+                  href={`#${contenu.id}`}
+                  className="text-slate-400 hover:bg-linear-to-r hover:from-indigo-400 hover:to-purple-600 hover:bg-clip-text hover:text-transparent cursor-pointer transition-colors duration-500"
+                >
+                  {contenu.label}
+                </a>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

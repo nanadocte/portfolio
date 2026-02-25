@@ -26,6 +26,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Lien vers mon GitHub"
               href="https://github.com/nanadocte"
+              className="text-slate-400"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -36,6 +37,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Lien vers mon Linkedin"
               href="https://www.linkedin.com/in/anne-goulamougaidine/"
+              className="text-slate-400"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -46,6 +48,7 @@ function Contact() {
               rel="noopener noreferrer"
               aria-label="Lien pour m'écrire un mail"
               href="mailto:goulamougaidine.anne@outlook.com"
+              className="text-slate-400"
             >
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
