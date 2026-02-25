@@ -43,10 +43,10 @@ function Hero() {
           </p>
 
           <div className="relative text-4xl xs:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold tracking-tighter lg:tracking-normal ">
-            <span className="absolute inset-0 text-transparent bg-clip-text bg-linear-to-r from-yellow-300 via-pink-500 to-purple-600 blur-xl opacity-50 pointer-events-none select-none">
+            <span className="z-30 absolute inset-0 text-transparent bg-clip-text bg-linear-to-r from-yellow-300 via-pink-500 to-purple-600 blur-xl opacity-50 pointer-events-none select-none">
               Goulamougaidine
             </span>
-            <h1 className="relative text-transparent bg-clip-text bg-linear-to-r from-yellow-300 via-pink-500 to-purple-600">
+            <h1 className="z-30 relative text-transparent bg-clip-text bg-linear-to-r from-yellow-300 via-pink-500 to-purple-600">
               Goulamougaidine
             </h1>
           </div>
