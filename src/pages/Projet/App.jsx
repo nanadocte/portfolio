@@ -1,14 +1,17 @@
 import Nav from '../Home/sections/Nav';
-import Projets from '../Home/sections/Projets';
-import Contact from '../Home/sections/Contact';
+
 import Footer from '../Home/sections/Footer';
 import projets from '../../data/projets.json';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { slug } = useParams();
   const projet = projets.find((item) => slug === item.slug);
   if (!projet)

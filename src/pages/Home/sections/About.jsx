@@ -26,10 +26,10 @@ function About() {
             <br />
             Curieuse et autodidacte, j’explore continuellement de nouvelles
             technologies et veille à appliquer des pratiques solides pour
-            construire des projets clairs et durables. Fascinée de l'étendue des
-            possibilités qu’offre le web, je souhaite aujourd’hui rejoindre un
-            environnement professionnel stimulant pour continuer à progresser et
-            contribuer activement à des projets concrets.
+            construire des projets clairs et durables. Fascinée par l'étendue
+            des possibilités qu’offre le web, je souhaite aujourd’hui rejoindre
+            un environnement professionnel stimulant pour continuer à progresser
+            et contribuer activement à des projets concrets.
           </p>
 
           <div>

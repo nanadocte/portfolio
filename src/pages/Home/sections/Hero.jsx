@@ -58,7 +58,7 @@ function Hero() {
         <button
           className={`
            transition-all duration-300 hover:scale-105 opacity-100
-          ${showButton ? 'xs:opacity-100' : 'xs:opacity-0'}`}
+          ${showButton ? 'lg:opacity-100' : 'lg:opacity-0'}`}
         >
           <a href="#project">Voir mes projets</a>
         </button>
