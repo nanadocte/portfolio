@@ -20,8 +20,8 @@ function App() {
         <Projets />
         <Parcours />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

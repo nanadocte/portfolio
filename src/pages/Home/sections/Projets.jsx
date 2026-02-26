@@ -40,15 +40,15 @@ function Projets() {
                 buttonActif === 'Tous' || projet.stack.includes(buttonActif)
             )
             .map((projet) => (
-              <Link key={projet.id} to={`/projet/${projet.slug}`}>
-                <ProjetCard
-                  img={projet.img}
-                  titre={projet.titre}
-                  description={projet.description}
-                  stack={projet.stack}
-                  github={projet.github}
-                />
-              </Link>
+              <ProjetCard
+                key={projet.id}
+                img={projet.img}
+                titre={projet.titre}
+                description={projet.description}
+                stack={projet.stack}
+                github={projet.github}
+                slug={projet.slug}
+              />
             ))}
         </div>
       </div>
