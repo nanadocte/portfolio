@@ -1,5 +1,5 @@
 import SectionTitle from '../../../components/SectionTitle';
-import annephoto from '/img/photo-anne222.png';
+import annephoto from '../../../assets/img/photo-anne222.png';
 
 function About() {
   return (

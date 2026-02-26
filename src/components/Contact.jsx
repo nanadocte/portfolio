@@ -1,5 +1,5 @@
-import SectionTitle from '../../../components/SectionTitle';
-import Form from '../../../components/Form';
+import SectionTitle from './SectionTitle';
+import Form from './Form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

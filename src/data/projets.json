@@ -2,7 +2,7 @@
   {
     "id": 1,
     "slug": "kasa",
-    "img": "/img/kasa.png",
+    "img": "/imgData/kasa.png",
     "titre": "Kasa – Application React",
     "description": "Application immobilière développée en React avec navigation dynamique et architecture modulaire.",
     "stack": ["React", "React Router", "Sass"],
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "slug": "mon-vieux-grimoire",
-    "img": "/img/grimoire.png",
+    "img": "/imgData/grimoire.png",
     "titre": "Mon Vieux Grimoire – API REST",
     "description": "API sécurisée avec authentification et opérations CRUD pour une plateforme de notation de livres.",
     "stack": ["Node.js", "Express", "MongoDB"],

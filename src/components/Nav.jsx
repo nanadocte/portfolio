@@ -22,7 +22,7 @@ function Nav() {
   }, []);
   return (
     <nav
-      className={`fixed w-full z-20 p-5 backdrop-blur-md font-mono transition-all duration-300
+      className={`fixed w-full z-40 p-5 backdrop-blur-md font-mono transition-all duration-300
     ${scroll ? 'border-b border-gray-900/30' : 'border-b border-transparent'}
     bg-gray-950 md:bg-gray-950/60`}
     >
