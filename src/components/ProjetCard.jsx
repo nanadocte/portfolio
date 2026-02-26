@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 function ProjetCard({ img, titre, description, stack, github, slug }) {
   return (
     <article className="group relative max-h-72 sm:max-h-80 md:max-h-96 bg-slate-800/20 overflow-hidden border border-white/10 rounded-2xl flex flex-col gap-2">
-      <Link className="absolute z-10 inset-0" to={`/projet/${slug}`}></Link>
+      <Link
+        aria-label="Lien pour accéder au détail du projet"
+        className="absolute z-10 inset-0"
+        to={`/projet/${slug}`}
+      ></Link>
       <img
         loading="lazy"
         className="opacity-60  h-48 sm:h-50 w-full object-cover group-hover:opacity-80 group-hover:scale-110 transition-all duration-300"
