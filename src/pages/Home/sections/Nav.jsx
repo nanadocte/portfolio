@@ -26,16 +26,14 @@ function Nav() {
     ${scroll ? 'border-b border-gray-900/30' : 'border-b border-transparent'}
     bg-gray-950 md:bg-gray-950/60`}
     >
-      {/* Mobile: flex-col */}
       <div className="flex flex-row-reverse md:flex-row justify-between items-start md:items-center">
-        {/* Logo */}
         <Link to={`/`} className="mb-4 md:mb-0">
           <p className="opacity-80 text-xl bg-linear-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent">
             Portfolio
           </p>
         </Link>
 
-        {/* Burger + menu mobile */}
+        {/*menu mobile */}
         <div className="md:hidden flex flex-col gap-5">
           <div onClick={() => setOpen(!open)} className="cursor-pointer">
             <div className="w-6 h-0.5 bg-slate-400 mb-1"></div>
@@ -49,6 +47,7 @@ function Nav() {
                 <li key={index}>
                   {location.pathname === '/' ? (
                     <a
+                      onClick={() => setOpen(!open)}
                       href={`#${contenu.id}`}
                       className="hover:bg-linear-to-r hover:from-indigo-400 hover:to-purple-600 hover:bg-clip-text hover:text-transparent cursor-pointer transition-colors duration-500"
                     >

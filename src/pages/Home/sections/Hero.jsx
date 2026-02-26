@@ -35,11 +35,6 @@ function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <p className="text-slate-200 flex flex-wrap items-center gap-2  font-light text-4xl xs:text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter">
             Anne
-            <span className="relative ml-4 text-transparent bg-clip-text bg-linear-to-r from-yellow-300 to-pink-500">
-              <span className="absolute inset-0 text-transparent bg-clip-text bg-linear-to-r from-yellow-300 to-pink-500 blur-xl opacity-50 pointer-events-none select-none">
-                {' '}
-              </span>
-            </span>
           </p>
 
           <div className="relative text-4xl xs:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold tracking-tighter lg:tracking-normal ">
@@ -51,9 +46,9 @@ function Hero() {
             </h1>
           </div>
         </div>
-        <p className=" text-sm sm:text-lg lg:text-xl text-center">
-          J'aime concevoir des applications qui traduisent des contraintes
-          humaines en logique exploitable par le code.
+        <p className="text-xs sm:text-lg lg:text-xl text-center">
+          Je conçois des applications qui traduisent des contraintes humaines en
+          logique exploitable par le code.
         </p>
         <button
           className={`

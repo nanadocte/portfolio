@@ -1,5 +1,4 @@
 import Nav from '../Home/sections/Nav';
-
 import Footer from '../Home/sections/Footer';
 import projets from '../../data/projets.json';
 import { useParams } from 'react-router-dom';
@@ -7,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Navigate } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -14,26 +14,8 @@ function App() {
   }, []);
   const { slug } = useParams();
   const projet = projets.find((item) => slug === item.slug);
-  if (!projet)
-    return (
-      <div className="flex flex-col min-h-screen bg-dark">
-        <Nav />
+  if (!projet) return <Navigate to="/404" replace></Navigate>;
 
-        <div className="flex-1 flex flex-col justify-center items-center gap-10">
-          <h1 className="font-mono text-center text-indigo-400 text-xl sm:text-8xl font-semibold tracking-wide">
-            Une erreur s'est produite
-          </h1>
-          <p className="font-mono text-center text-indigo-200 text-md sm:text-xl">
-            Ce projet est introuvable...
-          </p>
-          <Link className="font-mono text-slate-400" to={'/'}>
-            <button>Revenir à la page principale</button>
-          </Link>
-        </div>
-
-        <Footer />
-      </div>
-    );
   return (
     <>
       <Nav></Nav>
