@@ -6,7 +6,7 @@ import About from './sections/About';
 import Competences from './sections/Competences';
 import Projets from './sections/Projets';
 import Parcours from './sections/Parcours';
-import Contact from '../../components/Contact';
+import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import { useEffect } from 'react';
 

@@ -13,10 +13,9 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="*" element={<Navigate to={'/404'} replace />} />
+          <Route path="*" element={<Error />} />
           <Route path="/" element={<Home />} />
           <Route path="/projet/:slug" element={<Projet />} />
-          <Route path="/404" element={<Error />} />
         </Route>
       </Routes>
     </Router>
