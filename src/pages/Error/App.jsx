@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 function Error() {
   return (
-    <div className="flex flex-col">
-      <div className="min-h-screen flex-1 flex flex-col justify-center items-center gap-10">
+    <div className="flex flex-col min-h-screen">
+      <div className=" flex-1 flex flex-col justify-center items-center gap-10">
         <h1 className="font-mono text-center text-indigo-400 text-5xl sm:text-8xl font-semibold tracking-wide">
           Error 404
         </h1>

@@ -28,5 +28,50 @@
     "competences": "Modélisation de base de données MongoDB, sécurisation des routes Express, gestion des opérations CRUD, validation et traitement des erreurs côté serveur.",
     "resultats": "API fonctionnelle permettant la gestion sécurisée des ressources, tests manuels réalisés, documentation et endpoints clairs pour intégration front-end.",
     "ameliorations": "Ajouter des tests automatisés, journalisation des requêtes."
+  },
+  {
+    "id": 3,
+    "slug": "shift-optimizer",
+    "img": "/imgData/shift-optimizer.png",
+    "titre": "Shift Optimizer - API planning",
+    "description": "API REST backend permettant la génération automatique et optimisée de plannings en entreprise.",
+    "stack": ["Node.js", "TypeScript", "Fastify", "PostgreSQL"],
+    "github": "https://github.com/nanadocte/shift-optimizer.git",
+    "demo": null,
+    "contexte": "Projet personnel visant à automatiser la création de plannings pour les secteurs restauration et retail, en réponse au manque d'outils de génération automatique sur le marché.",
+    "objectifs": "Développer une API sécurisée capable de générer automatiquement des plannings en tenant compte des contraintes, préférences et heures contractuelles des employés.",
+    "competences": "Architecture modulaire REST, authentification JWT, algorithme de planning avec gestion des priorités, TypeScript, ORM Prisma avec migrations.",
+    "resultats": "API fonctionnelle avec algorithme de génération opérationnel, gestion des rôles admin/employé, calcul automatique des heures contractuelles mensuelles.",
+    "ameliorations": "Développement du frontend React avec gamification, ajout des jours de repos obligatoires, gestion des préférences employés."
+  },
+  {
+    "id": 4,
+    "slug": "menu-maker-qwenta",
+    "img": "/imgData/menu-maker.png",
+    "titre": "Menu Maker - Gestion projet",
+    "description": "Gestion de projet - Rédaction de spécifications techniques, suivi avec tableau Kanban, veille.",
+    "stack": [],
+    "github": null,
+    "demo": null,
+    "contexte": "Projet de gestion de projet visant à structurer le développement d’une solution web en amont via des livrables techniques et organisationnels.",
+    "objectifs": "Rédiger des spécifications techniques à partir de besoins fonctionnels, organiser le suivi du projet avec un outil Kanban et mettre en place une veille technologique structurée.",
+    "competences": "Rédaction de spécifications techniques, organisation et suivi de projet avec Kanban, mise en place d’une veille technologique et structuration des besoins fonctionnels.",
+    "resultats": "Spécifications techniques rédigées, tableau de suivi projet mis en place et veille technologique structurée et maintenue.",
+    "ameliorations": "Automatiser une partie du suivi projet avec des outils collaboratifs avancés (Notion, Jira) et enrichir la veille avec des sources plus spécialisées."
+  },
+  {
+    "id": 5,
+    "slug": "nina-carducci-seo-audit",
+    "img": "/imgData/nina-carduccii.png",
+    "titre": "Nina Carducci - Optimisation",
+    "description": "Projet d’audit, d’optimisation et de deboggage d’un site web photographe - Performances, SEO, Accessibilité.",
+    "stack": [],
+    "github": null,
+    "demo": null,
+    "contexte": "Analyse et optimisation d’un site web existant dans le cadre d’un projet d’audit technique axé sur les performances et l’accessibilité.",
+    "objectifs": "Améliorer le référencement naturel, les performances du site et son accessibilité en respectant les bonnes pratiques web.",
+    "competences": "Audit SEO, optimisation des performances, amélioration de l’accessibilité numérique, utilisation d’outils comme Lighthouse et Wave, débogage via DevTools.",
+    "resultats": "Amélioration des scores de performance et d’accessibilité, site optimisé pour le référencement et respect des standards web.",
+    "ameliorations": "Automatiser les audits avec des outils CI/CD et approfondir l’optimisation des performances avancées (lazy loading, compression, caching)."
   }
 ]
