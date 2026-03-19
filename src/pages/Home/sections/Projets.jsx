@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function Projets() {
+  const [visibleSlug, setVisibleSlug] = useState(null);
   const [buttonActif, setButtonActif] = useState('Tous');
   const uniqueStack = [...new Set(projets.flatMap((projet) => projet.stack))];
   return (
@@ -41,6 +42,8 @@ function Projets() {
             )
             .map((projet) => (
               <ProjetCard
+                onVisible={() => setVisibleSlug(projet.slug)}
+                isVisible={visibleSlug === projet.slug}
                 key={projet.id}
                 img={projet.img}
                 titre={projet.titre}

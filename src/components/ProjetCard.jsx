@@ -1,10 +1,37 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import { useState, useRef, useEffect } from 'react';
 
-function ProjetCard({ img, titre, description, stack, github, slug }) {
+function ProjetCard({
+  img,
+  titre,
+  description,
+  stack,
+  github,
+  slug,
+  onVisible,
+  isVisible,
+}) {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) onVisible();
+      },
+      { threshold: 0.5 }
+    );
+
+    if (cardRef.current) observer.observe(cardRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <article className="group  overflow-hidden bg-slate-800/20 border border-white/10 rounded-2xl flex flex-col">
+    <article
+      ref={cardRef}
+      className="group  overflow-hidden bg-slate-800/20 border border-white/10 rounded-2xl flex flex-col"
+    >
       <div className="relative w-full h-60 overflow-hidden shrink-0">
         <img
           loading="lazy"
@@ -13,7 +40,11 @@ function ProjetCard({ img, titre, description, stack, github, slug }) {
           alt={titre}
         ></img>
 
-        <div className="bg-linear-to-r  from-indigo-600/90 to-purple-600/90 opacity-0 hover:opacity-100 absolute inset-0 p-3 flex flex-col  flex-1 h-full gap-1 md:gap-2 justify-between text-center">
+        <div
+          className={`bg-linear-to-r  from-indigo-600/90 to-purple-600/90 sm:opacity-0 sm:hover:opacity-100 absolute inset-0 p-3 flex flex-col  flex-1 h-full gap-1 md:gap-2 justify-between text-center
+          ${isVisible ? 'opacity-100' : 'opacity-0'}
+        `}
+        >
           <div>
             <h3 className="text-slate-100 text-base md:text-lg font-semibold ">
               {titre}
