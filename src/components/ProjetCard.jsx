@@ -13,7 +13,7 @@ function ProjetCard({ img, titre, description, stack, github, slug }) {
           alt={titre}
         ></img>
 
-        <div className="bg-linear-to-r  from-indigo-600/95 to-purple-600/95 opacity-0 hover:opacity-100 absolute inset-0 p-3 flex flex-col  flex-1 h-full gap-1 md:gap-2 justify-between text-center">
+        <div className="bg-linear-to-r  from-indigo-600/90 to-purple-600/90 opacity-0 hover:opacity-100 absolute inset-0 p-3 flex flex-col  flex-1 h-full gap-1 md:gap-2 justify-between text-center">
           <div>
             <h3 className="text-slate-100 text-base md:text-lg font-semibold ">
               {titre}
