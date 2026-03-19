@@ -35,7 +35,7 @@
     "img": "/imgData/shift-optimizer.png",
     "titre": "Shift Optimizer - API planning",
     "description": "API REST backend permettant la génération automatique et optimisée de plannings en entreprise.",
-    "stack": ["Node.js", "TypeScript", "Fastify", "PostgreSQL"],
+    "stack": ["Node.js", "TypeScript", "PostgreSQL"],
     "github": "https://github.com/nanadocte/shift-optimizer.git",
     "demo": null,
     "contexte": "Projet personnel visant à automatiser la création de plannings pour les secteurs restauration et retail, en réponse au manque d'outils de génération automatique sur le marché.",

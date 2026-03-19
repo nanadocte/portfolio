@@ -4,59 +4,66 @@ import { Link } from 'react-router-dom';
 
 function ProjetCard({ img, titre, description, stack, github, slug }) {
   return (
-    <article className="group relative overflow-hidden bg-slate-800/20 border border-white/10 rounded-2xl flex flex-col">
-      <Link
-        aria-label="Lien pour accéder au détail du projet"
-        className="absolute z-10 inset-0"
-        to={`/projet/${slug}`}
-      ></Link>
-      <div className="w-full h-48 overflow-hidden shrink-0">
+    <article className="group  overflow-hidden bg-slate-800/20 border border-white/10 rounded-2xl flex flex-col">
+      <div className="relative w-full h-60 overflow-hidden shrink-0">
         <img
           loading="lazy"
-          className="opacity-60 h-full w-full object-cover group-hover:opacity-80 group-hover:scale-110 transition-all duration-300"
+          className=" opacity-70 h-full w-full object-cover group-hover:opacity-50  transition-all duration-300"
           src={img}
           alt={titre}
         ></img>
-      </div>
 
-      <div className="p-3 flex flex-col  flex-1 h-full gap-1 md:gap-2 justify-between">
-        <div>
-          <h3 className="text-slate-200 text-base md:text-lg font-semibold ">
-            {titre}
-          </h3>
-          <p className=" text-slate-400 text-xs hidden md:flex">
-            {description}
-          </p>
-        </div>
-
-        <div className="flex flex-row gap-1 md:gap-2 justify-between items-center">
-          <ul className="flex flex-wrap gap-2 text-xs text-slate-400">
-            {' '}
-            {stack?.map((tech) => (
-              <li
-                className="md:bg-indigo-900/30 flex items-center px-0 py-0 text-xs rounded-2xl  md:px-3 md:py-2"
-                key={tech}
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
-          {github && (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Lien vers le repository du projet"
-              className="z-20"
-              href={github}
+        <div className="bg-linear-to-r  from-indigo-600/95 to-purple-600/95 opacity-0 hover:opacity-100 absolute inset-0 p-3 flex flex-col  flex-1 h-full gap-1 md:gap-2 justify-between text-center">
+          <div>
+            <h3 className="text-slate-100 text-base md:text-lg font-semibold ">
+              {titre}
+            </h3>
+          </div>
+          <div className="flex flex-col gap-2 md:gap-3 justify-center items-center">
+            <Link
+              aria-label="Lien pour accéder au détail du projet"
+              className="relative z-20 inset-0"
+              to={`/projet/${slug}`}
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="mt-3 text-indigo-400 transition-transform duration-300 hover:scale-110"
-              />
-            </a>
-          )}
+              <button className="bg-slate-200 text-slate-200 cursor-pointer transition-transform duration-300 hover:scale-110 ">
+                Voir plus
+              </button>
+            </Link>
+
+            {!stack ||
+              (stack.length === 0 && (
+                <p className=" text-slate-400 text-xs ">{description}</p>
+              ))}
+            <ul className="justify-center flex flex-wrap gap-2 text-xs text-slate-400">
+              {' '}
+              {stack?.map((tech) => (
+                <li
+                  className="text-slate-400 flex items-center px-0 py-0 text-xs rounded-2xl "
+                  key={tech}
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+            {github && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Lien vers le repository du projet"
+                className="z-20"
+                href={github}
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="m-0 text-indigo-400 transition-transform duration-300 hover:scale-110"
+                />
+              </a>
+            )}
+          </div>
         </div>
       </div>
+
+      {/*  */}
     </article>
   );
 }
